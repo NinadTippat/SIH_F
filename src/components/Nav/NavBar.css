@@ -1,0 +1,63 @@
+.NavBar{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-image: url("../Mid1/banner-bg.png");
+
+}
+.headingOfNavBar{
+    color: white;
+    margin-left: 20px;
+    font-weight: 600;
+    display: flex;
+}
+.navicons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+.white{
+    /* margin-right: 40px; */
+    padding-left: 30px;
+    letter-spacing: 1.1px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #00ffff;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    text-decoration: none;
+}
+
+.white:hover{
+    transform: rotateY(30deg);
+    color: aliceblue;
+}
+
+.nav-btn{
+    width: 90px;
+    height: 45px;
+    margin-right: 40px;
+    background-color: transparent;
+    outline: none;
+    letter-spacing: 1.1px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #00ffff;
+    border: 2px solid #00ffff;
+    cursor: pointer;
+    /* transition: all 0.5s ease-out; */
+}
+
+.nav-btn:hover{
+    background: #00ffff;
+    border: 2px solid #000000;
+    color: #000;
+    /* color: rgb(255, 255, 255); */
+    /* transform: translateX(1em); */
+    /* border: 3px solid #00ffff; */
+}
