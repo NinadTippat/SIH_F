@@ -1,10 +1,6 @@
 import React from "react";
 import "./Footer3.css";
 import "./MediaFooter3.css";
-import Facebook from "@material-ui/icons/Facebook";
-import { Instagram } from "@material-ui/icons";
-import { WhatsApp } from "@material-ui/icons";
-import Location from "@material-ui/icons/LocationOn";
 import KeyboardArrowUp from "@material-ui/icons/KeyboardArrowUp";
 
 const Footer3 = () => {

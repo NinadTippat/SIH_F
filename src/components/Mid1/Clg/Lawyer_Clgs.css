@@ -1,0 +1,9 @@
+.lawyer_clgs{
+    color:  white;
+    padding-left: 200px;
+    padding-right: 20px;
+    padding-top: 50px;
+}   
+.lawyer_clgs > h1{
+    color:  #00ffff;
+}  

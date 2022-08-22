@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  /* border: 1px solid red; */
 }
 .footer_container_left_row {
   display: flex;
@@ -41,4 +42,16 @@
   cursor: pointer;
   margin-left: 30px;
   border: 2px solid rgb(0, 217, 255);
+}
+
+@media all and (max-width: 700px){
+  .KeyboardArrowUp {
+    
+    margin-left: 10px;
+    
+  }
+  .Footer3_container {
+    padding: 10px;    
+  }  
+
 }

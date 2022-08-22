@@ -1,19 +1,35 @@
-import React from "react";
-import Mid1 from "../Mid1/Mid1";
+import React, { useContext } from "react";
 import "./Home.css";
-// import Services from "../Services/Services";
-import Book from "../Book/Book";
 import Footers from "../Footers/Footers";
-import NavBar from "../Nav/NavBar";
+import Mid1 from "../Mid1/Mid1"
+import Chat from "../Chatbot/Chat";
+import { UserContext } from '../../App';
+
+
 
 const Home = () => {
+
+  const { state, dispatch } = useContext(UserContext);
+
+  const RenderChat = () => {
+    if (state) {
+      return <>
+        <Mid1 />
+        <Footers />
+        <Chat />
+      </>
+    }
+    else {
+      return <>
+        <Mid1 />
+        <Footers />
+      </>
+    }
+  }
+
   return (
     <div className="home">
-      <NavBar />
-      <Mid1 />
-      {/* <Services /> */}
-      <Book />
-      <Footers />
+      <RenderChat />
     </div>
   );
 };

@@ -2,10 +2,9 @@ import React from "react";
 import "./Footer2.css";
 import "./MediaFooter2.css";
 import "../../assets/Constants/Fonts.css";
-import Phone from "@material-ui/icons/Phone";
 import Gmail from "@material-ui/icons/Mail";
 import Location from "@material-ui/icons/LocationOn";
-import Table from "@material-ui/icons/BusinessCenter";
+
 
 const Footer2 = () => {
   return (
@@ -18,10 +17,7 @@ const Footer2 = () => {
         </div>
         <div className="footer_container_right">
           <h3>Contact us</h3>
-          <div className="footer_container_right_row">
-            <Phone style={{ color: "#00ffff" }} />
-            <p>9373000736</p>
-          </div>
+
           <div className="footer_container_right_row">
             <Gmail style={{ color: "#00ffff" }} />
             <p>careerrush2022@gmail.com</p>
@@ -30,26 +26,18 @@ const Footer2 = () => {
             <Location style={{ color: "#00ffff" }} />
             <p>Solapur, India.</p>
           </div>
-          {/* <div className="footer_container_right_row">
-            <Table style={{ color: "#00ffff" }} />
-            <p>Except Friday, Sunday to Satarday</p>
-          </div> */}
         </div>
         <div className="footer_container_right">
           <h3>Our Sevices</h3>
-          <p>Mercedes</p>
-          <p>Audi</p>
-          <p>BMW</p>
-          <p>Lamborghini</p>
-          <p>Jaguar</p>
+          <p>Career counseling</p>
+          <p>Career recommendation</p>
+          <p>Courses</p>
         </div>
         <div className="footer_container_right">
           <h3>About Us</h3>
           <p>Mindtech</p>
           <p>Experience</p>
           <p>About</p>
-          <p>Work</p>
-          <p>Carrer counselling</p>
         </div>
       </div>
       <div className="footer2_horizantal_line" />

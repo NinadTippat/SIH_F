@@ -42,7 +42,7 @@
   font-family: "Spartan";
   text-transform: capitalize;
 }
-.footer_end > button {
+.footer_end >a> button {
   width: 180px;
   height: 60px;
   border: 2px solid #00ffff;
@@ -56,7 +56,7 @@
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
-.footer_end > button:hover {
+.footer_end >a> button:hover {
   background-color: #00ffff;
   color: black;
   border: 1px solid white;
@@ -77,12 +77,8 @@
   box-shadow: 0 0 20px #1877f2;
 }
 
-.icon:hover:nth-child(3) {
-  background: #25d366;
-  box-shadow: 0 0 20px #25d366;
-}
 
-.icon:hover:nth-child(4) {
+.icon:hover:nth-child(3) {
   background: #1da1f2;
   box-shadow: 0 0 20px #1da1f2;
 }
@@ -111,7 +107,7 @@ svg circle {
 .main_icons {
   margin-top: 20px;
   position: relative;
-  left: 18.7%;
+  margin-left: 350px;
   transform: translate(-50%, -50%);
   justify-content: center;
   display: flex;
@@ -148,9 +144,56 @@ svg circle {
 .mobile_icons > li:nth-child(2):hover {
   color: rgb(211, 9, 70);
 }
+
 .mobile_icons > li:nth-child(3):hover {
-  color: rgb(0, 255, 76);
-}
-.mobile_icons > li:nth-child(4):hover {
   color: rgb(0, 132, 255);
 }
+
+
+/* Mobile Section  */
+
+
+.mobile_icons {
+  display: none;
+  background-color: transparent;
+  color: white;
+  list-style: none;
+  /* border: 2px solid red; */
+  height: 50px;
+}
+.mobile_icons > li {
+  text-decoration: none;
+  /* border: 2px solid blue; */
+  padding: 0 20px;
+  font-size: 25px;
+}
+.mobile_icons > li:nth-child(1):hover {
+  color: blue;
+}
+.mobile_icons > li:nth-child(2):hover {
+  color: rgb(211, 9, 70);
+}
+
+.mobile_icons > li:nth-child(3):hover {
+  color: rgb(0, 132, 255);
+}
+
+
+
+
+
+@media all and (max-width: 650px) {
+ .main_icons{
+  display: none;
+ }
+  .mobile_icons {
+    display: flex;
+  }
+  
+}
+
+
+
+
+/* cards  */
+

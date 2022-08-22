@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to bottom, #18171a, #171619, #151517, #141316, #121214, #121215, #111116, #111117, #12111a, #13121e, #141221, #151224);
+  background-image: url("../src/components/assets/banner-bg.png");
 }
 
 code {

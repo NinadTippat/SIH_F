@@ -2,17 +2,17 @@ import React from "react";
 import "./Book.css";
 import "./MediaBook.css";
 import "../assets/Constants/Fonts.css";
-import contactImg from "../images/contact-img.svg";
+import contactImg from "../assets/contact-img.svg";
 
 
 const Book = () => {
   return (
     <div className="Book">
-      <div className="book_title">
+      {/* <div className="book_title">
         <h1>Join with us</h1>
         <p>Find the perfect career today</p>
-      </div>
-      <div className="book_container">
+      </div> */}
+      {/* <div className="book_container">
         <div className="book_container_left">
           <img src={contactImg} alt="img" />
         </div>
@@ -42,6 +42,9 @@ const Book = () => {
             <button>Book Now</button>
           </div>
         </div>
+      </div> */}
+      <div>
+        <button> Take Test</button>
       </div>
     </div>
   );

@@ -6,23 +6,22 @@
     justify-content: center;
     margin-top: 15px;
 }
-.newuser > a{
+.newuser > a {
     text-decoration: none;
     margin-left: 10px;
     color: white;
 
 }
 .newuser > a:hover{
-    
     color: #06b;
 
 }
 .login {
     align-items: center;
-    background-image: url("../Mid1/banner-bg.png");
+    background-image: url("../assets/banner-bg.png");
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 600px;
   }
   
   .form1{

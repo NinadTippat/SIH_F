@@ -3,8 +3,9 @@
     justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 10px;
-    background-image: url("../Mid1/banner-bg.png");
-
+    background-image: url("../assets/banner-bg.png");
+    
+    /* border: 1px solid red; */
 }
 .headingOfNavBar{
     color: white;
@@ -15,15 +16,15 @@
 .navicons{
     display: flex;
     justify-content: space-evenly;
-    width: 200px;
+    /* width: 220px; */
+    /* border: 2px solid red; */
     margin-left: 60px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 .white{
-    /* margin-right: 40px; */
     padding-left: 30px;
     letter-spacing: 1.1px;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
     color: #00ffff;
@@ -50,14 +51,79 @@
     color: #00ffff;
     border: 2px solid #00ffff;
     cursor: pointer;
-    /* transition: all 0.5s ease-out; */
 }
 
 .nav-btn:hover{
     background: #00ffff;
     border: 2px solid #000000;
     color: #000;
-    /* color: rgb(255, 255, 255); */
-    /* transform: translateX(1em); */
-    /* border: 3px solid #00ffff; */
+}
+
+@media all and (max-width: 850px){
+    .NavBar{
+        padding-top: 10px;
+    }
+    .navicons{
+        width: 150px;
+        margin-left: 40px;
+    }
+    .white{
+        font-size: 10px;
+    }
+    .headingOfNavBar{
+        margin-left: 10px;
+        font-weight: 600;
+        font-size: 10px;
+        margin-top: 15px;
+    }
+    .nav-btn{
+        width: 50px;
+        height: 25px;
+        margin-right: 40px;
+        background-color: transparent;
+        outline: none;
+        letter-spacing: 1.1px;
+        font-size: 8px;
+        text-transform: uppercase;
+        border: 1px solid #00ffff;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+}
+
+@media all and (max-width: 565px){
+    .NavBar{
+        padding-top: 0px;
+    }
+    .headingOfNavBar{
+        margin-left: 10px;
+        font-weight: 600;
+        font-size: 8px;
+        margin-top: 17px;
+    }
+    .navicons{
+        width: 100px;
+    }
+}
+@media all and (max-width: 608px){
+     .navicons{
+        display: none;
+    }
+    .nav-btn{
+        display: none;
+    }
+    .nav-btn_mobile{
+    width: 65px;
+    height: 35px;
+    margin-top: 20px;
+    background-color: transparent;
+    outline: none;
+    letter-spacing: 1.1px;
+    font-size: 9px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #00ffff;
+    border: 2px solid #00ffff;
+    cursor: pointer;
+    }
 }
