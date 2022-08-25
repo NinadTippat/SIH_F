@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./components/Authentication/Login";
 import SignUp from "./components/Authentication/SignUp";
 import Home from "./components/Home/Home";
-// import Chat from "./components/Chatbot/Chat";
 import About from "./components/AboutUs/About";
 import Contact from "./components/Contact/Contact";
 import CareerLibrary from "./components/CareerLibrary/CareerLibrary";
@@ -17,6 +16,8 @@ import Test1 from "./components/Test/Test1";
 import Test2 from "./components/Test/Test2";
 import Test3 from "./components/Test/Test3";
 import Result from "./components/Test/Result";
+import Aeronautical_Engineering from "./components/Courses/Engineering_Courses/Aeronautical_Engineering";
+import Aerospace_Engineering from "./components/Courses/Engineering_Courses/Aerospace_Engineering";
 
 //1.create context
 export const UserContext = createContext();
@@ -39,6 +40,14 @@ const Routing = () => {
       <Route path="/test2" element={<Test2 />} />
       <Route path="/test3" element={<Test3 />} />
       <Route path="/result" element={<Result />} />
+      <Route
+        path="/aeronautical_engineering"
+        element={<Aeronautical_Engineering />}
+      />
+      <Route
+        path="/aerospace_engineering"
+        element={<Aerospace_Engineering />}
+      />
     </Routes>
   );
 };
@@ -50,7 +59,6 @@ const App = () => {
       <UserContext.Provider value={{ state, dispatch }}>
         <Router>
           <NavBar />
-          {/* <Chat /> */}
           <Routing />
         </Router>
       </UserContext.Provider>

@@ -1,0 +1,38 @@
+.main_engineer{
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    padding-top: 40px;
+}
+.intro{
+    width: 500px;
+    /* border: 1px solid blue; */
+}
+
+.eligibilitiy{
+    width: 500px;
+    /* border: 1px solid white; */
+}
+.eligibility_heading{
+    padding-top: 20px;
+}
+.courses_colleges{
+    width: 100%;
+    /* border: 1px solid aqua; */
+    padding-top: 50px;
+    color: white;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.courses_{
+    width: 500px;
+    /* border: 1px solid red; */
+}
+.colleges{
+    width: 500px;
+    /* border: 1px solid aqua; */
+}

@@ -1,9 +1,10 @@
 import React from 'react'
 import "./Courses.css"
-import "../Mid1/Mid1.css"
+// import "../Mid1/Mid1.css"
 import Telegram from "@material-ui/icons/Telegram";
 import Settings from "@material-ui/icons/Settings";
 import EmojiObjectsRounded from "@material-ui/icons/EmojiObjectsRounded";
+import { Link } from 'react-router-dom';
 
 const EngineeringCourses = () => {
 
@@ -24,11 +25,8 @@ const EngineeringCourses = () => {
                             marginBottom: 30,
                         }}
                     />
-                    <h2 className="mid_box_heading Linktag">Aeronautical Engineering</h2>
+                    <Link to="/aeronautical_engineering" className='Linktag' s><h2 className="mid_box_heading Linktag">Aeronautical Engineering</h2></Link>
                     <div className="mid1_box_horizantal" />
-                    <p>
-                        Lorem ipsum dolor, sit amet
-                    </p>
                 </div>
                 <div className="mid1_box">
                     <EmojiObjectsRounded
@@ -40,12 +38,10 @@ const EngineeringCourses = () => {
                             marginBottom: 30,
                         }}
                     />
-                    <h2 className="mid_box_heading Linktag">Aerospace Engineering</h2>
+                    <Link to="/aeronautical_engineering" className='Linktag' s> <h2 className="mid_box_heading Linktag">Aerospace Engineering</h2></Link>
 
                     <div className="mid1_box_horizantal" />
-                    <p>
-                        Lorem, ipsum dolor sit amet
-                    </p>
+
                 </div>
                 <div className="mid1_box">
 
@@ -61,9 +57,7 @@ const EngineeringCourses = () => {
                     <h2 className="mid_box_heading">Architecture Engineering</h2>
 
                     <div className="mid1_box_horizantal" />
-                    <p>
-                        Lorem ipsum dolor sit amet.
-                    </p>
+
                 </div>
             </div>
 
@@ -83,9 +77,7 @@ const EngineeringCourses = () => {
                     />
                     <h2 className="mid_box_heading">Artificial Intelligence and Machine Learning </h2>
                     <div className="mid1_box_horizantal" />
-                    <p>
-                        Learn Electronics and PCB Design
-                    </p>
+
                 </div>
                 <div className="mid1_box">
                     <EmojiObjectsRounded
@@ -100,9 +92,7 @@ const EngineeringCourses = () => {
                     <h2 className="mid_box_heading">Astronomy And Astrophysics</h2>
 
                     <div className="mid1_box_horizantal" />
-                    <p>
-                        Start your career in electrical
-                    </p>
+
                 </div>
                 <div className="mid1_box">
 
@@ -119,9 +109,7 @@ const EngineeringCourses = () => {
                     </h2>
 
                     <div className="mid1_box_horizantal" />
-                    <p>
-                        No Libraries used, Professional CMSI
-                    </p>
+
                 </div>
             </div>
 
@@ -141,9 +129,7 @@ const EngineeringCourses = () => {
                     />
                     <h2 className="mid_box_heading">Bio Medical Engineering</h2>
                     <div className="mid1_box_horizantal" />
-                    <p>
-                        Learn Electronics and PCB Design
-                    </p>
+
                 </div>
                 <div className="mid1_box">
                     <EmojiObjectsRounded
@@ -158,9 +144,7 @@ const EngineeringCourses = () => {
                     <h2 className="mid_box_heading">Bio Technology Engineering</h2>
 
                     <div className="mid1_box_horizantal" />
-                    <p>
-                        Start your career in electrical & electronics
-                    </p>
+
                 </div>
                 <div className="mid1_box">
 
@@ -176,9 +160,7 @@ const EngineeringCourses = () => {
                     <h2 className="mid_box_heading">Ceramics Engineering</h2>
 
                     <div className="mid1_box_horizantal" />
-                    <p>
-                        No Libraries used, Professional CMSIS Standard, ARM Cortex, ADC,
-                    </p>
+
                 </div>
             </div>
 
@@ -198,9 +180,7 @@ const EngineeringCourses = () => {
                     />
                     <h2 className="mid_box_heading">Chemical Engineering</h2>
                     <div className="mid1_box_horizantal" />
-                    <p>
-                        Learn Electronics and PCB Design from the Ground up with Altium
-                    </p>
+
                 </div>
                 <div className="mid1_box">
                     <EmojiObjectsRounded
@@ -215,9 +195,7 @@ const EngineeringCourses = () => {
                     <h2 className="mid_box_heading">Civil Engineering</h2>
 
                     <div className="mid1_box_horizantal" />
-                    <p>
-                        Start your career in electrical & electronics engineering by
-                    </p>
+
                 </div>
                 <div className="mid1_box">
 
@@ -234,9 +212,7 @@ const EngineeringCourses = () => {
                     </h2>
 
                     <div className="mid1_box_horizantal" />
-                    <p>
-                        No Libraries used, Professional CMSIS Standard, ARM Cortex, ADC,
-                    </p>
+
                 </div>
             </div>
 
@@ -256,9 +232,7 @@ const EngineeringCourses = () => {
                     />
                     <h2 className="mid_box_heading">Electrical And Electronics Engineering</h2>
                     <div className="mid1_box_horizantal" />
-                    <p>
-                        Learn Electronics and PCB Design from the Ground up with Altium
-                    </p>
+
                 </div>
                 <div className="mid1_box">
                     <EmojiObjectsRounded
@@ -273,9 +247,7 @@ const EngineeringCourses = () => {
                     <h2 className="mid_box_heading">Electronics And Communication Engineering</h2>
 
                     <div className="mid1_box_horizantal" />
-                    <p>
-                        Start your career in electrical & electronics engineering by
-                    </p>
+
                 </div>
                 <div className="mid1_box">
 
@@ -292,9 +264,7 @@ const EngineeringCourses = () => {
                     </h2>
 
                     <div className="mid1_box_horizantal" />
-                    <p>
-                        No Libraries used, Professional CMSIS Standard, ARM Cortex, ADC,
-                    </p>
+
                 </div>
             </div>
 
@@ -314,9 +284,7 @@ const EngineeringCourses = () => {
                     />
                     <h2 className="mid_box_heading">Information Communications And Entertainment</h2>
                     <div className="mid1_box_horizantal" />
-                    <p>
-                        Learn Electronics and PCB Design from the Ground up with Altium
-                    </p>
+
                 </div>
                 <div className="mid1_box">
                     <EmojiObjectsRounded
@@ -332,9 +300,7 @@ const EngineeringCourses = () => {
                     </h2>
 
                     <div className="mid1_box_horizantal" />
-                    <p>
-                        Start your career in electrical & electronics engineering by
-                    </p>
+
                 </div>
                 <div className="mid1_box">
 
@@ -352,9 +318,7 @@ const EngineeringCourses = () => {
                     </h2>
 
                     <div className="mid1_box_horizantal" />
-                    <p>
-                        No Libraries used, Professional CMSIS Standard
-                    </p>
+
                 </div>
             </div>
 
@@ -375,9 +339,7 @@ const EngineeringCourses = () => {
                     <h2 className="mid_box_heading">Marine Engineering
                     </h2>
                     <div className="mid1_box_horizantal" />
-                    <p>
-                        Learn Electronics and PCB Design from the Ground up with Altium
-                    </p>
+
                 </div>
                 <div className="mid1_box">
                     <EmojiObjectsRounded
@@ -393,9 +355,7 @@ const EngineeringCourses = () => {
                     </h2>
 
                     <div className="mid1_box_horizantal" />
-                    <p>
-                        Start your career in electrical & electronics engineering by
-                    </p>
+
                 </div>
                 <div className="mid1_box">
 
@@ -412,9 +372,7 @@ const EngineeringCourses = () => {
                     </h2>
 
                     <div className="mid1_box_horizantal" />
-                    <p>
-                        No Libraries used, Professional CMSIS Standard
-                    </p>
+
                 </div>
             </div>
 
@@ -435,9 +393,7 @@ const EngineeringCourses = () => {
                     <h2 className="mid_box_heading">Mining Engineering
                     </h2>
                     <div className="mid1_box_horizantal" />
-                    <p>
-                        Learn Electronics and PCB Design from the Ground up with Altium
-                    </p>
+
                 </div>
                 <div className="mid1_box">
                     <EmojiObjectsRounded
@@ -453,9 +409,7 @@ const EngineeringCourses = () => {
                     </h2>
 
                     <div className="mid1_box_horizantal" />
-                    <p>
-                        Start your career in electrical & electronics engineering by
-                    </p>
+
                 </div>
                 <div className="mid1_box">
 
@@ -472,9 +426,7 @@ const EngineeringCourses = () => {
                     </h2>
 
                     <div className="mid1_box_horizantal" />
-                    <p>
-                        No Libraries used, Professional CMSIS Standard
-                    </p>
+
                 </div>
             </div>
 
@@ -496,9 +448,7 @@ const EngineeringCourses = () => {
 
                     </h2>
                     <div className="mid1_box_horizantal" />
-                    <p>
-                        Learn Electronics and PCB Design from the Ground up with Altium
-                    </p>
+
                 </div>
                 <div className="mid1_box">
                     <EmojiObjectsRounded
@@ -514,9 +464,7 @@ const EngineeringCourses = () => {
                     </h2>
 
                     <div className="mid1_box_horizantal" />
-                    <p>
-                        Start your career in electrical & electronics engineering by
-                    </p>
+
                 </div>
                 <div className="mid1_box">
 
@@ -533,9 +481,7 @@ const EngineeringCourses = () => {
                     </h2>
 
                     <div className="mid1_box_horizantal" />
-                    <p>
-                        No Libraries used, Professional CMSIS Standard
-                    </p>
+
                 </div>
             </div>
         </div >

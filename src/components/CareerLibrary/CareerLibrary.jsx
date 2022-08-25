@@ -35,6 +35,10 @@ const CareerLibrary = () => {
                         <div className="mid1_box_horizantal" />
                         <p>
                             Courses in Engineering
+                            <br />
+                            Eligibility for engineering
+                            <br />
+                            Institutes of Engineering
                         </p>
                     </div>
                     <div className="mid1_box">
@@ -51,7 +55,11 @@ const CareerLibrary = () => {
 
                         <div className="mid1_box_horizantal" />
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Courses in Medical
+                            <br />
+                            Eligibility for Medical
+                            <br />
+                            Institutes of Medical
                         </p>
                     </div>
                     <div className="mid1_box">
@@ -65,11 +73,15 @@ const CareerLibrary = () => {
                                 marginBottom: 30,
                             }}
                         />
-                        <Link to="/" className="Linktag"><h2 className="mid_box_heading">Architechture</h2></Link>
+                        <Link to="/" className="Linktag"><h2 className="mid_box_heading">Lawyer</h2></Link>
 
                         <div className="mid1_box_horizantal" />
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam!
+                            Courses in Lawyer
+                            <br />
+                            Eligibility for Lawyer
+                            <br />
+                            Institutes of Lawyer
                         </p>
                     </div>
                 </div>

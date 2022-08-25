@@ -19,7 +19,7 @@ const Contact = () => {
                                 <div className="app-form">
 
                                     <div className="counselling_heading">
-                                        <h1>Get in touch with our Expert.</h1>
+                                        <h1>Get in touch with our Experts.</h1>
                                     </div>
 
                                     <button onClick={() => { book_appointment() }} type='sumbit' className="app-form-button big_btn">Book Now</button>
