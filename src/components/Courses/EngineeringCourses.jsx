@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Courses.css"
-// import "../Mid1/Mid1.css"
+import "../Mid1/Mid1.css"
 import Telegram from "@material-ui/icons/Telegram";
 import Settings from "@material-ui/icons/Settings";
 import EmojiObjectsRounded from "@material-ui/icons/EmojiObjectsRounded";
@@ -54,10 +54,9 @@ const EngineeringCourses = () => {
                             marginBottom: 30,
                         }}
                     />
-                    <h2 className="mid_box_heading">Architecture Engineering</h2>
+                    <Link to="/architecture_engineering" className='Linktag' s><h2 className="mid_box_heading">Architecture Engineering</h2></Link>
 
                     <div className="mid1_box_horizantal" />
-
                 </div>
             </div>
 
@@ -75,9 +74,8 @@ const EngineeringCourses = () => {
                             marginBottom: 30,
                         }}
                     />
-                    <h2 className="mid_box_heading">Artificial Intelligence and Machine Learning </h2>
-                    <div className="mid1_box_horizantal" />
-
+                    <Link to="/artificial_intelligence_engineering" className='Linktag' s><h2 className="mid_box_heading">Artificial Intelligence and Machine Learning </h2>
+                        <div className="mid1_box_horizantal" /></Link>
                 </div>
                 <div className="mid1_box">
                     <EmojiObjectsRounded
@@ -89,7 +87,7 @@ const EngineeringCourses = () => {
                             marginBottom: 30,
                         }}
                     />
-                    <h2 className="mid_box_heading">Astronomy And Astrophysics</h2>
+                    <Link to="/astornomy_engineering" className='Linktag' s> <h2 className="mid_box_heading">Astronomy And Astrophysics</h2></Link>
 
                     <div className="mid1_box_horizantal" />
 
@@ -478,6 +476,42 @@ const EngineeringCourses = () => {
                         }}
                     />
                     <h2 className="mid_box_heading">Metallurgy Engineering
+                    </h2>
+
+                    <div className="mid1_box_horizantal" />
+
+                </div>
+            </div>
+
+            {/* SECTION 10 */}
+            <div data-aos="fade-up"
+                data-aos-duration="1000" className="mid1_box_all">
+                <div className="mid1_box">
+
+                    <Settings
+                        style={{
+                            color: "#00ffff",
+                            fontSize: 60,
+                            marginLeft: 30,
+                            marginTop: 30,
+                            marginBottom: 30,
+                        }}
+                    />
+                    <h2 className="mid_box_heading">Meteorology Engineering</h2>
+                    <div className="mid1_box_horizantal" />
+
+                </div>
+                <div className="mid1_box">
+                    <EmojiObjectsRounded
+                        style={{
+                            color: "#00ffff",
+                            fontSize: 60,
+                            marginLeft: 30,
+                            marginTop: 30,
+                            marginBottom: 30,
+                        }}
+                    />
+                    <h2 className="mid_box_heading">Physical Sciences
                     </h2>
 
                     <div className="mid1_box_horizantal" />

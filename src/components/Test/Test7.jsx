@@ -103,6 +103,53 @@ function Test() {
         }
     };
 
+    const per7 = (score7 * 100 / 35);
+    const res7 = per7.toPrecision(4);
+    const Render_Score7 = () => {
+        if ((score7 * 100 / 35) > 85) {
+            return <>
+                Based on your answers,  here are some recommended careers
+                <br />
+                <br />
+                Diplomat
+                <br />
+                Leader
+                <br />
+                Manager
+                <br />
+                Politician
+                <br />
+                Clergy
+                <br />
+                Social Worker
+                <br />
+                Receptionist
+                <br />
+                Sales Representative
+                <br />
+                Counselor
+                <br />
+                Child Care
+                <br />
+                Coach
+                <br />
+                <div >
+                    <Link to="/test8"><button className="next_btn" >Next</button></Link>
+                </div>
+            </>
+        }
+        else if ((score7 * 100 / 35) < 85) {
+            return <>
+                <div className="score-section">
+                    <h2> Based on your answers,  we request you to go for next test.</h2>
+                    <div >
+                        <Link to="/test8"><button className="next_btn" >Next</button></Link>
+                    </div>
+                </div>
+            </>
+        }
+    }
+
 
 
 
@@ -112,11 +159,7 @@ function Test() {
             <div className="app">
                 {showScore ? (
                     <div className="score-section"  >
-                        {/* You scored {(score1 * 100) / 35}% out of {(questions.length * 5 * 100) / 35}% */}
-                        Your scored {score7}
-                        <div >
-                            <Link to="/test8"><button className="next_btn" >Next</button></Link>
-                        </div>
+                        <Render_Score7 />
                     </div>
 
                 ) : (

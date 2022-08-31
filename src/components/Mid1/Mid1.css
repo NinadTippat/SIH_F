@@ -2,9 +2,8 @@
   display: flex;
   flex-direction: column;
   font-family: "Spartan", sans-serif;
-  background-image: linear-gradient(to left top, #944572, #8b3f75, #803a78, #72377c, #63347f, #56347d, #49337a, #3c3276, #35326c, #2f3062, #2b2f57, #282d4c);
   background-image: url("../assets/banner-bg.png");
-  background-repeat: no-repeat;
+  background-color: linear-gradient(to left top, #944572, #8b3f75, #803a78, #72377c, #63347f, #56347d, #49337a, #3c3276, #35326c, #2f3062, #2b2f57, #282d4c);
 }
 
 .mid1 {
@@ -116,4 +115,16 @@
   margin-left: 500px;
   color: #00ffff;
   margin-bottom: 40px;
+}
+
+.career_video{
+  /* width: 400px; */
+  /* border: 2px solid red; */
+  position: relative;
+  object-fit: contain;
+}
+video{
+  margin-top: 100px;
+  width: 60%;
+  margin-left: 270px;
 }

@@ -102,7 +102,58 @@ function Test() {
             setShowScore(true);
         }
     };
-
+    const per5 = (score5 * 100 / 35);
+    const res5 = per5.toPrecision(4);
+    const Render_Score5 = () => {
+        if ((score5 * 100 / 35) > 85) {
+            return <>
+                Based on your answers,  here are some recommended careers
+                <br />
+                <br />
+                Athlete
+                <br />
+                Dancer
+                <br />
+                Mechanic
+                <br />
+                Actor / Actress
+                <br />
+                Performer
+                <br />
+                Physical Education Instructor
+                <br />
+                Craftsman
+                <br />
+                Physical Therapist
+                <br />
+                Farmer
+                <br />
+                Carpenter
+                <br />
+                Builder
+                <br />
+                Park Ranger
+                <br />
+                Firefighter
+                <br />
+                Paramedic
+                <br />
+                <div >
+                    <Link to="/test6"><button className="next_btn" >Next</button></Link>
+                </div>
+            </>
+        }
+        else if ((score5 * 100 / 35) < 85) {
+            return <>
+                <div className="score-section">
+                    <h2> Based on your answers,  we request you to go for next test.</h2>
+                    <div >
+                        <Link to="/test6"><button className="next_btn" >Next</button></Link>
+                    </div>
+                </div>
+            </>
+        }
+    }
 
 
 
@@ -112,12 +163,7 @@ function Test() {
             <div className="app">
                 {showScore ? (
                     <div className="score-section">
-                        {/* You scored {(score * 100) / 35}% out of {(questions.length * 5 * 100) / 35}% */}
-                        Your scored {score5}
-
-                        <div >
-                            <Link to="/test6"><button className="next_btn" >Next</button></Link>
-                        </div>
+                        <Render_Score5 />
                     </div>
 
                 ) : (

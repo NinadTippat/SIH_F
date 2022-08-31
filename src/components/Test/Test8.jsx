@@ -103,6 +103,53 @@ function Test() {
         }
     };
 
+    const per8 = (score8 * 100 / 35);
+    const res8 = per8.toPrecision(4);
+    const Render_Score8 = () => {
+        if ((score8 * 100 / 35) > 85) {
+            return <>
+                Based on your answers,  here are some recommended careers
+                <br />
+                <br />
+                Psychologist
+                <br />
+                Philosopher
+                <br />
+                Writer
+                <br />
+                Theologian
+                <br />
+                Career counselor
+                <br />
+                Consultant
+                <br />
+                Criminologist
+                <br />
+                Energy healer
+                <br />
+                Personal counselor
+                <br />
+                Philosopher
+                <br />
+                Program planner
+                <br />
+                <div >
+                    <Link to="/CareerLibrary"><button className="next_btn" >Home</button></Link>
+                </div>
+            </>
+        }
+        else if ((score8 * 100 / 35) < 85) {
+            return <>
+                <div className="score-section">
+                    <h2> Based on your answers,  we request you to go for next test.</h2>
+                    <div >
+                        <Link to="/CareerLibrary"><button className="next_btn" >Home</button></Link>
+                    </div>
+                </div>
+            </>
+        }
+    }
+
 
 
 
@@ -112,11 +159,7 @@ function Test() {
             <div className="app">
                 {showScore ? (
                     <div className="score-section"  >
-                        {/* You scored {(score1 * 100) / 35}% out of {(questions.length * 5 * 100) / 35}% */}
-                        Your scored {score8}
-                        <div >
-                            <Link to="/result"><button className="next_btn" >Result</button></Link>
-                        </div>
+                        <Render_Score8 />
                     </div>
 
                 ) : (

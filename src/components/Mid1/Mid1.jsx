@@ -89,6 +89,12 @@ const Mid1 = () => {
           </p>
         </div>
       </div>
+      <div className="career_video">
+        <video controls >
+          <source src="/videos/Career_Rush.mp4" type="video/mp4" />
+          {/* <source src="/videos/ID_4560094.mp4" type="video/mp4" /> */}
+        </video>
+      </div>
     </div>
 
   );

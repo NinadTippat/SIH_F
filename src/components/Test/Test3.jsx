@@ -102,6 +102,60 @@ function Test() {
             setShowScore(true);
         }
     };
+    const per3 = (score3 * 100 / 35);
+    const res3 = per3.toPrecision(4);
+    const Render_Score3 = () => {
+        if ((score3 * 100 / 35) > 85) {
+            return <>
+                Based on your answers,  here are some recommended careers
+                <br />
+                <br />
+                Astronomer
+                <br />
+                Botanist
+                <br />
+                Conservationist
+                <br />
+                Gardener
+                <br />
+                Farmer
+                <br />
+                Animal Trainer
+                <br />
+                Zookeeper
+                <br />
+                Geologist
+                <br />
+                Marine Biologist
+                <br />
+                Ecologist
+                <br />
+                Veterinarian
+                <br />
+                Forest ranger
+                <br />
+                Landscaper
+                <br />
+                Meteorologist
+                <br />
+                Nature photographer
+                <br />
+                <div >
+                    <Link to="/test4"><button className="next_btn" >Next</button></Link>
+                </div>
+            </>
+        }
+        else if ((score3 * 100 / 35) < 85) {
+            return <>
+                <div className="score-section">
+                    <h2> Based on your answers,  we request you to go for next test.</h2>
+                    <div >
+                        <Link to="/test4"><button className="next_btn" >Next</button></Link>
+                    </div>
+                </div>
+            </>
+        }
+    }
 
 
 
@@ -111,12 +165,7 @@ function Test() {
             <div className="app">
                 {showScore ? (
                     <div className="score-section">
-                        {/* You scored {(score * 100) / 35}% out of {(questions.length * 5 * 100) / 35}% */}
-                        Your scored {score3}
-
-                        <div >
-                            <Link to="/test4"><button className="next_btn" >Next</button></Link>
-                        </div>
+                        <Render_Score3 />
                     </div>
 
                 ) : (

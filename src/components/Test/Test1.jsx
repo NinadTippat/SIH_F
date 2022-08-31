@@ -96,6 +96,7 @@ function Test() {
             setScore(score1 + 1);
         }
 
+
         const nextQuestion = currentQuestion + 1;
         if (nextQuestion < questions.length) {
             setCurrentQuestion(nextQuestion);
@@ -104,11 +105,62 @@ function Test() {
         }
     };
 
-    const res1 = score1;
+    const per1 = (score1 * 100 / 35);
+    const res1 = per1.toPrecision(4);
 
-    // export default res1;
+    const Render_Score1 = () => {
+        if (res1 > 75.10) {
+            return <>
+                <br />
+                Your score is {res1}% Based on your score,  here are some recommended careers
 
-
+                <br />
+                <br />
+                Accountant
+                <br />
+                Computer analyst
+                <br />
+                Computer technician
+                <br />
+                Computer programmer
+                <br />
+                Database designer
+                <br />
+                Economist
+                <br />
+                Engineer
+                <br />
+                Lawyer
+                <br />
+                Mathematician
+                <br />
+                Network analyst
+                <br />
+                Pharmacist
+                <br />
+                Physician
+                <br />
+                Physicist
+                <br />
+                Researcher
+                <br />
+                Statistician
+                <div >
+                    <Link to="/test2"><button className="next_btn" >Next</button></Link>
+                </div>
+            </>
+        }
+        else if ((score1 * 100 / 35) < 80) {
+            return <>
+                <div className="score-section">
+                    <h2>Your score is {res1} for Logical-Mathematical Test.</h2>
+                    <div >
+                        <Link to="/test2"><button className="next_btn" >Next</button></Link>
+                    </div>
+                </div>
+            </>
+        }
+    }
 
     return (
 
@@ -117,11 +169,7 @@ function Test() {
             <div className="app">
                 {showScore ? (
                     <div className="score-section"  >
-                        {/* You scored {(score1 * 100) / 35}% out of {(questions.length * 5 * 100) / 35}% */}
-                        Your scored {score1}
-                        <div >
-                            <Link to="/test2"><button className="next_btn" >Next</button></Link>
-                        </div>
+                        <Render_Score1 />
                     </div>
 
                 ) : (
@@ -133,7 +181,7 @@ function Test() {
                             <div className="question-text">
                                 {questions[currentQuestion].questionText}
                             </div>
-                        </div>
+                        </div >
                         <div className="answer-section">
                             {questions[currentQuestion].answerOptions.map((answerOption) => (
                                 <button className='ans_btn'
@@ -146,9 +194,10 @@ function Test() {
 
 
                     </>
-                )}
-            </div>
-        </div>
+                )
+                }
+            </div >
+        </div >
 
     )
 }
