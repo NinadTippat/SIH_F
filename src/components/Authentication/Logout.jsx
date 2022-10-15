@@ -1,16 +1,12 @@
-import React, { useContext } from "react";
+import React from "react";
 import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import { UserContext } from "../../App";
 
 const Logout = () => {
-    const { state, dispatch } = useContext(UserContext);
-    const navigate = useNavigate();
 
     //promises
     useEffect(() => {
         fetch("/logout", {
-            method: "GET",
+            method: "POST",
             headers: {
                 Accept: "appllication/json", //this if for cookie
                 "Content-Type": "application/json",
@@ -25,9 +21,6 @@ const Logout = () => {
                     throw error;
                 }
             })
-            .catch((err) => {
-                console.log(err);
-            });
     });
 
     return <div></div>;

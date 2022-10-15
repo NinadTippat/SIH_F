@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import "../assets/Constants/Fonts.css";
 import "./Mid1.css";
 import "./MediaMid1.css";
@@ -7,13 +7,9 @@ import LightSpeed from 'react-reveal/LightSpeed';
 import Roll from 'react-reveal/Roll';
 import Rotate from 'react-reveal/Rotate';
 import { Link } from "react-router-dom";
-import { UserContext } from '../../App';
 
 
 const Mid1 = () => {
-
-  const { state, dispatch } = useContext(UserContext);
-
   const RenderTest = () => {
     if (state) {
       return <>
@@ -31,7 +27,7 @@ const Mid1 = () => {
     <div className="mid_all">
       <div className="mid1">
         <div className="mid1_left">
-          <Roll right> <h1>Welcome to Career Rush</h1></Roll>
+          <Roll right> <h1>Welcome to Career Rush </h1></Roll>
           <LightSpeed left><p>Career Counselling, Career guidance test </p></LightSpeed>
 
           <RenderTest />

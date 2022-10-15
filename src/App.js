@@ -1,4 +1,4 @@
-import React, { createContext, useReducer } from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./components/Authentication/Login";
 import SignUp from "./components/Authentication/SignUp";
@@ -19,7 +19,6 @@ import FilmLineCourses from "./components/Courses/FilmLineCourses";
 import EnvironmentalCourses from "./components/Courses/EnvironmentalCourses";
 
 import Counselling from "./components/Counselling/Counselling";
-import { initialState, reducer } from "../src/reducer/UseReducer";
 import Test1 from "./components/Test/Test1";
 import Test2 from "./components/Test/Test2";
 import Test3 from "./components/Test/Test3";
@@ -40,10 +39,8 @@ import Dental from "./components/Courses/Medical_Courses/Dental";
 import Homeopathy from "./components/Courses/Medical_Courses/Homeopathy";
 import CharteredAccountancy from "./components/Courses/Commerce_Courses/CharteredAccountancy";
 import CharteredFinancialAnalysis from "./components/Courses/Commerce_Courses/CharteredFinancialAnalysis";
-import EventManagement from "./components/Courses/Commerce_Courses/EventManagement";
 
 //1.create context
-export const UserContext = createContext();
 
 const Routing = () => {
   return (
@@ -100,21 +97,17 @@ const Routing = () => {
         path="/chartered_financial_analysis"
         element={<CharteredFinancialAnalysis />}
       />
-      <Route path="/event_management" element={<EventManagement />} />
     </Routes>
   );
 };
 
 const App = () => {
-  const [state, dispatch] = useReducer(reducer, initialState);
   return (
     <>
-      <UserContext.Provider value={{ state, dispatch }}>
         <Router>
           <NavBar />
           <Routing />
         </Router>
-      </UserContext.Provider>
     </>
   );
 };

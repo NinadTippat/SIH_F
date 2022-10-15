@@ -1,21 +1,16 @@
-import React, { useContext } from "react";
+import React from "react";
 import { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
 import "./Login1.css"
-import { UserContext } from "../../App";
 
 
 const Login = () => {
 
-    const { state, dispatch } = useContext(UserContext);
 
-    const navigate = useNavigate();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
 
     const loginUser = async (e) => {
-        e.preventDefault();
         const res = await fetch("/signin", {
             method: "POST",
             headers: {
@@ -28,10 +23,9 @@ const Login = () => {
         });
         // window.localStorage.setItem("isLoggedIn", true)
         const data = res.json();
-        if (res.status === 400 || !data) {
+        if (res.status === 800 || !data) {
             window.alert("Invalid Credentials");
-            // setEmail("");
-            // setPassword("");
+
         } else {
             dispatch({ type: "USER", payload: true });
             window.alert("Login sunccess");
@@ -55,8 +49,8 @@ const Login = () => {
                             <input id="password" className="input" value={password} onChange={(e) => setPassword(e.target.value)} required type="password" placeholder="Password" />
 
                         </div>
-                        <input type="submit" name='login' id='login' value="Log In" onClick={loginUser} className="submit" />
-                        <p className='newuser'>New user?<Link to="/signup">Create an account</Link></p>
+                        <input name='login' id='login' value="Log In" onClick={loginUser} className="submit" />
+                        <p className='newuser'>New user?</p>
                     </form>
                 </div>
 
